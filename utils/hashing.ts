@@ -46,7 +46,7 @@ export function hexToBytes(hex: string): Uint8Array {
   const cleanHex = hex.startsWith("0x") ? hex.slice(2) : hex
   const bytes = new Uint8Array(cleanHex.length / 2)
   for (let i = 0; i < cleanHex.length; i += 2) {
-    bytes[i / 2] = Number.parseInt(cleanHex.substr(i, 2), 16)
+    bytes[i / 2] = Number.parseInt(cleanHex.slice(i, i + 2), 16)
   }
   return bytes
 }
