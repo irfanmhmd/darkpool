@@ -4,7 +4,7 @@ A privacy-focused prediction market built on Aptos blockchain with commit-reveal
 
 ## Prerequisites
 
-- Node.js 18+
+- Node.js 18+ (LTS recommended)
 - pnpm (recommended) or npm
 - Aptos CLI
 - Git
